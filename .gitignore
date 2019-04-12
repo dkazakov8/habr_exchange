@@ -1,0 +1,4 @@
+node_modules
+.idea
+.frontend.env
+yarn.lock
