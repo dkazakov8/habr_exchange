@@ -1,4 +1,4 @@
-node_modules
-.idea
 .frontend.env
+.idea
+node_modules
 yarn.lock

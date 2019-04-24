@@ -1,0 +1,118 @@
+rules:
+  array-bracket-spacing: [error, never]
+  block-spacing: [error, always]
+  brace-style: [error, 1tbs]
+  camelcase: off
+  capitalized-comments: off
+  comma-dangle: [error, always-multiline]
+  comma-spacing: error
+  comma-style: [error, last]
+  computed-property-spacing: [error, never]
+  consistent-this: [error, that]
+  eol-last: off
+  func-call-spacing: [error, never]
+  func-name-matching: off
+  func-names: [error, always]
+  func-style: [error, declaration]
+  id-match: off
+  indent:
+    - error
+    - 2
+    - SwitchCase: 1
+  jsx-quotes: [error, prefer-double]
+  key-spacing: error
+  keyword-spacing:
+    - error
+    -
+      before: true
+      after: true
+  line-comment-position: off
+  linebreak-style: off
+  lines-around-comment: off
+  lines-around-directive: error
+  max-depth:
+    - error
+    - max: 4
+  max-len:
+  - warn
+  -
+    code: 100
+    ignoreComments: true
+    ignorePattern: "^import\\W.*"
+  max-lines: off
+  max-nested-callbacks:
+    - error
+    - max: 5
+  max-params:
+    - error
+    - max: 8
+  max-statements:
+    - error
+    - max: 50
+  max-statements-per-line:
+    - error
+    - max: 1
+  multiline-ternary: ["error", "always"]
+  new-cap: off
+  new-parens: error
+  newline-per-chained-call:
+    - error
+    - ignoreChainWithDepth: 3
+  no-array-constructor: error
+  no-bitwise: error
+  no-continue: error
+  no-lonely-if: error
+  no-mixed-operators: warn
+  no-mixed-spaces-and-tabs: error
+  no-multi-assign: error
+  no-multiple-empty-lines:
+  - error
+  -
+    max: 1
+    maxBOF: 0
+    maxEOF: 0
+  no-negated-condition: off
+  no-nested-ternary: off
+  no-new-object: error
+  no-plusplus: off
+  no-restricted-syntax:
+    - error
+    - WithStatement
+  no-tabs: error
+  no-ternary: off
+  no-trailing-spaces: error
+  no-underscore-dangle: off
+  no-unneeded-ternary: error
+  no-whitespace-before-property: error
+  nonblock-statement-body-position: off
+  object-curly-newline:
+    - error
+    - multiline: true
+  object-curly-spacing: [error, always]
+  object-property-newline: off
+  one-var: [error, never]
+  one-var-declaration-per-line: error
+  operator-assignment: [error, always]
+  operator-linebreak:
+    - error
+    - after
+    - overrides:
+        "?": before
+        ":": before
+  padded-blocks: [error, never]
+  quote-props: [error, as-needed]
+  quotes: [error, single]
+  require-jsdoc: off
+  semi: off
+  semi-spacing: off
+  sort-keys: off
+  sort-vars: off
+  space-before-blocks: error
+  space-before-function-paren: [error, never]
+  space-in-parens: [error, never]
+  space-infix-ops: error
+  space-unary-ops: error
+  spaced-comment: [error, always]
+  template-tag-spacing: [error, never]
+  unicode-bom: off
+  wrap-regex: error

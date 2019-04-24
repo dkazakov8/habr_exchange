@@ -1,0 +1,5 @@
+@import "mixins.scss";
+
+.tabs {
+  @include tabs;
+}

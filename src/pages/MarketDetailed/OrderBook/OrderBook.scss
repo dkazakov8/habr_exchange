@@ -1,0 +1,56 @@
+@import "mixins.scss";
+
+.block {
+  @include block($col_width * 2);
+  @include table();
+
+  .bar {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    background: red;
+    top: 0;
+    right: 0;
+  }
+
+  .tableBody {
+    .row {
+      &.sell {
+        .cell:first-child {
+          color: $R500;
+        }
+
+        .bar {
+          background: linear-gradient($R500a2, $R500a1);
+        }
+      }
+
+      &.buy {
+        .cell:first-child {
+          color: $G500;
+        }
+
+        .bar {
+          background: linear-gradient($G500a2, $G500a1);
+        }
+      }
+    }
+  }
+
+  .currentPriceRow {
+    border-top: 1px solid $border_color;
+    border-bottom: 1px solid $border_color;
+    background: $light_bg_color;
+    font-size: 14px;
+    font-weight: bold;
+    padding: $table_col_padding_top $table_col_padding_side;
+
+    &.down {
+      color: $R500;
+    }
+
+    &.up {
+      color: $G500;
+    }
+  }
+}

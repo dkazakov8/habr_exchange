@@ -1,0 +1,7 @@
+rules:
+  import/default: 2
+  import/extensions: warn
+  import/first: warn
+  import/newline-after-import: off
+  import/order: [2, { newlines-between: "always", groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'] }]
+  import/prefer-default-export: off

@@ -1,0 +1,6 @@
+<svg aria-hidden="true" focusable="false">
+    <linearGradient x1="0" y1="0" x2="0" y2="1" id="chartVolumeGradient">
+        <stop offset="0" stop-color="#b3d6fc" stop-opacity="1" />
+        <stop offset="1" stop-color="#fff" stop-opacity="1" />
+    </linearGradient>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "Integration tests for Exchange platform",
+  "author": "Dmitry Kazakov",
+  "license": "MIT",
+  "scripts": {
+    "start": "cypress open"
+  },
+  "dependencies": {
+    "cypress": "3.2.0"
+  }
+}

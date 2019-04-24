@@ -1,0 +1,137 @@
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+
+  to {
+    padding: 0;
+  }
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-animation: bugfix infinite 1s;
+  font-family: "PT Sans", sans-serif;
+}
+
+html,
+body,
+div,
+span,
+cite,
+code,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+small,
+sub,
+sup,
+b,
+i,
+a,
+ol,
+ul,
+li,
+footer,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+b {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  line-height: normal;
+}
+
+input,
+select {
+  vertical-align: top;
+  -webkit-appearance: none;
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}

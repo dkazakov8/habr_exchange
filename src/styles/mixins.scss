@@ -1,0 +1,21 @@
+@import "constants.scss";
+@import "layout.scss";
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin inline-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

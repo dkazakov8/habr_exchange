@@ -1,0 +1,23 @@
+{
+  "name": "eslint-custom",
+  "version": "0.0.1",
+  "description": "Custom linter rules for this project",
+  "author": "Dmitry Kazakov",
+  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "10.0.1",
+    "eslint": "5.16.0",
+    "eslint-config-prettier": "4.2.0",
+    "eslint-plugin-cypress": "2.2.1",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react-hooks": "1.6.0",
+    "prettier": "1.17.0",
+    "prettier-eslint": "8.8.2",
+    "stylelint": "10.0.1",
+    "stylelint-config-prettier": "5.1.0",
+    "stylelint-prettier": "1.0.6",
+    "stylelint-scss": "3.6.1"
+  }
+}

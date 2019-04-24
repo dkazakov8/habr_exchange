@@ -1,0 +1,37 @@
+{
+  "name": "exchange_habr",
+  "homepage": "https://dkazakov8.github.io/exchange_habr/dist",
+  "version": "1.0.0",
+  "description": "An example of building Frontend for Exchange platform",
+  "author": "Dmitry Kazakov",
+  "license": "MIT",
+  "scripts": {
+    "upd": "yarn install --no-lockfile",
+    "dev": "webpack-dev-server --config webpack-custom/webpack.config.js",
+    "build": "webpack --config webpack-custom/webpack.config.js",
+    "format:js": "eslint --ignore-path .formatignore --ext .js -c ./eslint-custom/eslint.config.js --fix",
+    "format:style": "stylelint --ignore-path .formatignore --config ./eslint-custom/stylelint.config.js  --fix"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format:js -- --max-warnings=0 ./ && npm run format:style ./**/*.scss"
+    }
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "16.8.6",
+    "@sentry/browser": "5.1.1",
+    "classnames": "2.2.6",
+    "eslint-custom": "file:./eslint-custom",
+    "highcharts": "7.1.1",
+    "husky": "2.1.0",
+    "lodash": "4.17.11",
+    "mobx": "5.9.4",
+    "mobx-react-lite": "1.3.0",
+    "react": "16.8.6",
+    "webpack-custom": "file:./webpack-custom"
+  }
+}

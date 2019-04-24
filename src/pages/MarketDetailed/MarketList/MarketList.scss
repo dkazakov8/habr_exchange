@@ -1,0 +1,89 @@
+@import "mixins.scss";
+
+.block {
+  @include block($col_width * 2);
+  @include table;
+
+  float: left;
+  padding: $col_spacing;
+
+  .row {
+    user-select: none;
+
+    &:hover {
+      background: $N20;
+    }
+
+    &.active {
+      background: $N20 !important;
+      cursor: default;
+      font-weight: bold;
+    }
+
+    .cell:first-child {
+      text-transform: uppercase;
+    }
+  }
+
+  .themeBlock {
+    float: right;
+
+    .themeToggler {
+      @include inline-top;
+
+      width: 16px;
+      height: 16px;
+      border: 1px solid #000;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-top: 2px;
+      transition: border-color $trans;
+
+      &.light {
+        background: #fff;
+      }
+
+      &.dark {
+        background: #000;
+        margin-right: 20px;
+      }
+
+      &:hover,
+      &.active {
+        border-color: $B500;
+      }
+    }
+
+    .lnToggler {
+      @include inline-top;
+
+      width: 32px;
+      height: 16px;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-top: 2px;
+      opacity: 0.5;
+      transition: opacity $trans;
+      border: 1px solid #000;
+      background-size: 100% 100%;
+
+      &.ru {
+        background-image: url("assets/russia-flag-icon-32.png");
+      }
+
+      &.en {
+        background-image: url("assets/united-kingdom-flag-icon-32.png");
+        margin-right: 0;
+      }
+
+      &:hover,
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.alignRight {
+  text-align: right;
+}

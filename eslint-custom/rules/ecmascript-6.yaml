@@ -1,0 +1,34 @@
+rules:
+  arrow-body-style: [error, as-needed]
+  arrow-parens: [warn, as-needed]
+  arrow-spacing: error
+  constructor-super: error
+  generator-star-spacing: [error, after]
+  no-class-assign: error
+  no-confusing-arrow:
+    - error
+    - allowParens: true
+  no-const-assign: error
+  no-dupe-class-members: error
+  no-duplicate-imports: error
+  no-new-symbol: error
+  no-restricted-imports: error
+  no-this-before-super: error
+  no-useless-computed-key: error
+  no-useless-constructor: error
+  no-useless-rename: error
+  no-var: error
+  object-shorthand: error
+  prefer-arrow-callback: off
+  prefer-const: error
+  prefer-destructuring: warn
+  prefer-numeric-literals: error
+  prefer-rest-params: error
+  prefer-spread: error
+  prefer-template: error
+  require-yield: error
+  rest-spread-spacing: error
+  sort-imports: off
+  symbol-description: error
+  template-curly-spacing: error
+  yield-star-spacing: error

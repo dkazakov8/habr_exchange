@@ -1,0 +1,15 @@
+@import "mixins.scss";
+
+.contentWrapper {
+  text-align: center;
+
+  .title {
+    font-size: 40px;
+    line-height: 46px;
+    padding-top: 50px;
+  }
+
+  .text {
+    padding-top: 20px;
+  }
+}

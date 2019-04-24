@@ -1,0 +1,20 @@
+@import "mixins.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: $line_height;
+  overflow-x: hidden;
+  background: $N0;
+}
+
+::selection {
+  background: $N900;
+  color: $N0;
+  fill: $N0;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,24 @@
+{
+  "src\\pages\\MarketDetailed\\TPInfo\\TPInfo.js": {
+    "lastPrice": "Текущая цена",
+    "change24h": "Изменение 24ч",
+    "high24h": "Высшая цена 24ч",
+    "low24h": "Низшая цена 24ч"
+  },
+  "src\\pages\\MarketDetailed\\MarketList\\MarketList.js": {
+    "pair": "Пара",
+    "price": "Цена",
+    "change": "Изменение",
+    "marketsList": "Рынки"
+  },
+  "src\\pages\\MarketDetailed\\OrderBook\\OrderBook.js": {
+    "orderBook": "Список предложений",
+    "price": "Цена",
+    "amount": "Кол-во",
+    "total": "Всего"
+  },
+  "src\\pages\\MarketDetailed\\Chart\\Chart.js": {
+    "chart": "График",
+    "month": "{count} {count: месяц,месяцa,месяцев}"
+  }
+}

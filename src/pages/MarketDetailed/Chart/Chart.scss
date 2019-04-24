@@ -1,0 +1,175 @@
+@import "mixins.scss";
+
+.block {
+  @include block($col_width * 4);
+
+  padding: $col_spacing;
+
+  .header.absolute {
+    border-bottom: 0;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  }
+
+  .credits {
+    color: $N100;
+    font-weight: normal;
+    font-size: 12px;
+  }
+}
+
+.chart {
+  :global {
+    .highcharts-root {
+      font-family: "Roboto", sans-serif !important;
+      font-size: 12px !important;
+      line-height: $line_height;
+    }
+
+    .highcharts-background {
+      fill: $N0;
+    }
+
+    .highcharts-scrollbar {
+      transform: translate(0, 351px) !important;
+    }
+
+    .highcharts-scrollbar-button,
+    .highcharts-scrollbar-thumb {
+      fill: $border_color;
+      cursor: pointer;
+      transition: fill $trans;
+
+      &:hover {
+        fill: $N100;
+      }
+    }
+
+    .highcharts-scrollbar-track {
+      stroke: $border_color;
+      fill: none;
+    }
+
+    .highcharts-scrollbar-rifles {
+      cursor: pointer;
+    }
+
+    .highcharts-button {
+      $rightOffset: 67px;
+
+      .highcharts-button-box {
+        fill: none;
+      }
+
+      text {
+        fill: $N100 !important;
+        transition: fill $trans;
+        font-size: 12px;
+      }
+
+      &.highcharts-button-hover {
+        text {
+          fill: $B500 !important;
+        }
+      }
+
+      &.highcharts-button-pressed {
+        text {
+          fill: $B500 !important;
+          font-weight: bold;
+        }
+      }
+
+      &:nth-of-type(1) {
+        transform: translateX($rightOffset - 67px);
+      }
+
+      &:nth-of-type(2) {
+        transform: translateX($rightOffset);
+      }
+
+      &:nth-of-type(3) {
+        transform: translateX($rightOffset + 70px);
+      }
+    }
+
+    .highcharts-tooltip {
+      .highcharts-tooltip-box {
+        > span {
+          background: $N20;
+          padding: $table_col_padding_side;
+          font-family: inherit !important;
+          font-size: 12px !important;
+          line-height: $line_height;
+          color: $N900 !important;
+        }
+      }
+    }
+
+    .highcharts-point {
+      stroke-width: 0.5;
+      stroke: $N600;
+
+      &.highcharts-point-up {
+        fill: $G500;
+
+        &.highcharts-point-hover {
+          fill: $G400;
+        }
+      }
+
+      &.highcharts-point-down {
+        fill: $R500;
+
+        &.highcharts-point-hover {
+          fill: $R400;
+        }
+      }
+
+      &.highcharts-color-1 {
+        stroke-width: 0;
+        fill: $border_color;
+
+        &.highcharts-point-hover {
+          fill: $N100;
+        }
+      }
+    }
+
+    .highcharts-series-1 {
+      path:first-child {
+        fill: url(#chartVolumeGradient) !important;
+      }
+
+      path:nth-child(2) {
+        stroke: $B500 !important;
+        stroke-width: 1;
+      }
+    }
+
+    .highcharts-grid-line {
+      stroke: $N20;
+    }
+
+    .highcharts-axis-labels {
+      text {
+        fill: $N900 !important;
+      }
+    }
+  }
+}
+
+.svgGradient {
+  position: absolute;
+  left: -99999px;
+
+  stop:first-child {
+    stop-color: $B500a3;
+  }
+
+  stop:last-child {
+    stop-color: $N0;
+  }
+}
